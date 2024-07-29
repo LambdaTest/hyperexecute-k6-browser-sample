@@ -1,0 +1,31 @@
+---
+version: "0.1"
+runson: linux
+
+autosplit: true
+concurrency: 2
+
+runtime:
+    addons:
+      - name: k6
+        version: "v0.52.0"
+
+env: 
+  K6_BROWSER_ENABLED: true
+  K6_BROWSER_HEADLESS: false
+  HE_CONTEXT_K6_SETUP_DEFAULT_BROWSER_PATH: true
+
+pre:
+  - k6 version
+  - printenv
+
+testDiscovery:
+  type: raw
+  mode: dynamic
+  command: ls tests/*.js
+
+testRunnerCommand: k6 run $test  
+
+scenarioCommandStatusOnly: true
+
+jobLabel: [K6, 'HyperExecute',autosplit] 
