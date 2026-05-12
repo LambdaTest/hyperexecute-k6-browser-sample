@@ -1,13 +1,13 @@
-# How to run HyperExecute k6 Sample?
+# How to run HyperExecute k6 Sample? — TestMu AI (Formerly LambdaTest)
 
 k6 is an open-source tool designed to make load testing easy and accessible for developers and QA engineers. It's specifically built for testing the performance of APIs, microservices, and websites.
 
 ## Prerequisites
 To run the Tests on HyperExecute from your Local System, you are required:
 
-- Your LambdaTest [Username and Access key](https://www.lambdatest.com/support/docs/hyperexecute-how-to-get-my-username-and-access-key/)
-- [HyperExecute YAML](https://www.lambdatest.com/support/docs/hyperexecute-yaml-parameters/) file which contains all the necessary instructions.
-- [HyperExecute CLI](https://www.lambdatest.com/support/docs/hyperexecute-cli-run-tests-on-hyperexecute-grid/) in order to initiate a test execution Job .
+- Your TestMu AI [Username and Access key](https://www.testmuai.com/support/docs/hyperexecute-how-to-get-my-username-and-access-key/)
+- [HyperExecute YAML](https://www.testmuai.com/support/docs/hyperexecute-yaml-parameters/) file which contains all the necessary instructions.
+- [HyperExecute CLI](https://www.testmuai.com/support/docs/hyperexecute-cli-run-tests-on-hyperexecute-grid/) in order to initiate a test execution Job .
 
 ## Step 1: Downlaod the HyperExecute CLI
 
@@ -23,7 +23,7 @@ You can download the `HyperExecute CLI` for your OS from the links given below. 
 
 You will have to add these flags mandatorily in your YAML file to execute the k6 tests:
 
-- [runtime flag](https://www.lambdatest.com/support/docs/deep-dive-into-hyperexecute-yaml/#runtime) to download and install the k6 of that respective version.
+- [runtime flag](https://www.testmuai.com/support/docs/deep-dive-into-hyperexecute-yaml/#runtime) to download and install the k6 of that respective version.
 
 ```yaml
 runtime:
@@ -32,7 +32,7 @@ runtime:
         version: "v0.52.0"
 ```
 
-- [env flag](https://www.lambdatest.com/support/docs/deep-dive-into-hyperexecute-yaml/#env) is used to install certain dependencies to run your test cases
+- [env flag](https://www.testmuai.com/support/docs/deep-dive-into-hyperexecute-yaml/#env) is used to install certain dependencies to run your test cases
 
 ```yaml
 env: 
@@ -50,3 +50,22 @@ Run the below command in your terminal at the root folder of the project:
 ```bash
 ./hyperexecute --user YOUR_USERNAME --key YOUR_ACCESS_KEY --config RELATIVE_PATH_OF_YOUR_YAML_FILE
 ```
+
+## 🚀 [LambdaTest is Now TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/)
+
+👋 Welcome to TestMu AI, the next evolution of LambdaTest. As of January 2026, LambdaTest has officially rebranded to TestMu AI. We have evolved from a cross-browser testing cloud into a unified, AI-native quality engineering platform designed for the modern DevOps era.
+
+Whether you have been part of the LambdaTest community for years or are just discovering TestMu AI, our mission remains the same: to help you ship faster with high-scale test execution, autonomous testing, and deep quality analytics.
+
+**🔄 Our Rebrand Journey**
+
+We chose the name TestMu AI to reflect our shift towards intelligent, autonomous testing. While our identity has changed, our core technology and commitment to the testing community stay the same.
+
+**✨ Specialties**
+
+- 🤖 AI-Native Test Execution (Formerly LambdaTest)
+- ⚡ Autonomous Test Automation
+- 🌐 Cross-Browser & Mobile Testing
+- 📊 Unified Quality Intelligence
+
+👉 Find [LambdaTest's New Home](https://www.testmuai.com/).
